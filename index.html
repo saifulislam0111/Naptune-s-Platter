@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +11,19 @@
       href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/e226994713.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       .font-sora {
@@ -31,9 +43,129 @@
     </script>
   </head>
   <body class="font-sora">
-    <header>
+    <header
+      class="md:container mx-auto bg-gray-100"
+    >
+      <nav class="bg-gray-100">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Product</a></li>
+                <li>
+                  <a>Services</a>
+                </li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl">
+              <img src="c2-assets/logo-header.png" alt="" />
+            </a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-xl">
+              <li><a>Product</a></li>
+              <li><a>Services</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="mx-10"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a><i class="fa-solid fa-cart-shopping"></i></a>
+            <a class="btn border border-green-600 mx-20">Login</a>
+            <a class="btn bg-green-600 text-white">Register</a>
+          </div>
+        </div>
+      </nav>
+      <div class="py-20">
+        <h3 class="text-6xl text-center font-bold">
+          Freshness
+          <span class="text-green-600"
+            >You Can <br />
+            Count</span
+          >
+          On, Prices You’ll Love!
+        </h3>
+        <p class="text-center py-6">
+          Shop your daily essentials at unbeatable prices. From fresh produce to
+          pantry staples, we’ve got you covered every day!
+        </p>
+      </div>
+      <img class="mx-auto" src="c2-assets/hero-vegetables.png" alt="" />
     </header>
-    <main></main>
-    <footer></footer>
+    <main class="md:container mx-auto">
+      <!-- Services -->
+      <section class="py-20">
+        <h3 class="text-3xl font-bold text-green-600">Services</h3>
+        <div class="flex flex-col lg:flex-row justify-evenly py-16">
+          <div class="card bg-base-100 w-96 shadow-xl  bg-gray-100">
+            <div class="card-body items-center text-center">
+              <img src="c2-assets/service.png" alt="" />
+              <h2 class="card-title">24/7 Services</h2>
+              <p>
+                Are you looking for businesses that operate 24/7, or are you
+                referring to something specific like customer support, online
+                tools, or fitness centers?
+              </p>
+            </div>
+          </div>
+          <div class="card bg-base-100 w-96 shadow-xl  bg-gray-100">
+            <div class="card-body items-center text-center">
+              <img src="c2-assets/delivery.png" alt="" />
+              <h2 class="card-title">Fast Delivery</h2>
+              <p>
+                Are you looking for businesses that operate 24/7, or are you
+                referring to something specific like customer support, online
+                tools, or fitness centers?
+              </p>
+            </div>
+          </div>
+          <div class="card bg-base-100 w-96 shadow-xl  bg-gray-100">
+            <div class="card-body items-center text-center">
+              <img src="c2-assets/healthy.png" alt="" />
+              <h2 class="card-title">Healthy Products</h2>
+              <p>
+                Are you looking for businesses that operate 24/7, or are you
+                referring to something specific like customer support, online
+                tools, or fitness centers?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Popular Product -->
+       <div class="bg-gray-100 px-10 py-20">
+        <h3 class="text-3xl font-bold text-green-600">Popular Products</h3>
+        <div>
+          <div>
+            <img src="c2-assets/onion.png" alt="">
+            <div>
+              <p><i class="fa-solid fa-star"></i></p>
+            </div>
+          </div>
+        </div>
+       </div>
+    </main>
+    <footer class="md:container mx-auto"></footer>
   </body>
 </html>
